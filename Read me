@@ -1,0 +1,17 @@
+cd C:\Users\nagin\OneDrive\Desktop\OpenCV_project
+Activate Your Virtual Environment
+venv\Scripts\activate
+Install Required Packages
+pip install opencv-python ultralytics mediapipe
+
+pip install mysql-connector-python
+
+mysql -u root -p
+pip install streamlit pandas
+pip install openpyxl
+
+pip install pygame
+
+streamlit run admin_dashboard.py
+
+python detect_person.py
