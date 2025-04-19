@@ -1,17 +1,72 @@
-cd C:\Users\nagin\OneDrive\Desktop\OpenCV_project
-Activate Your Virtual Environment
-venv\Scripts\activate
-Install Required Packages
-pip install opencv-python ultralytics mediapipe
+full_readme_content = """# 😴 Yawn & 📱 Phone Detector with Roasts + Memes
 
-pip install mysql-connector-python
+A real-time computer vision project that detects people **yawning** or **using their phones** using webcam footage — and roasts them like a savage HR bot from the future.
 
-mysql -u root -p
-pip install streamlit pandas
-pip install openpyxl
+> Built with 💻 Python, 🧠 YOLOv8, 🔬 Mediapipe, 🎯 MySQL, and 💥 Memes.
 
-pip install pygame
+---
 
-streamlit run admin_dashboard.py
+## 🔥 Features
 
+- 👀 Real-time webcam detection
+- 📱 Phone usage monitoring (with roast popups!)
+- 😴 Yawn detection (with savage jokes)
+- 📸 Meme-stamped snapshots for yawn moments
+- 💾 MySQL logging of all events (timestamped)
+- 🔔 Notification popups + sound alerts
+- 😈 Auto-generated roast/joke messages
+- 📂 Snapshots saved in `snapshots/` with captions
+
+---
+
+## 🧠 Tech Stack
+
+| Tool           | Purpose                       |
+|----------------|-------------------------------|
+| YOLOv8         | Object Detection (phones/people) |
+| Mediapipe      | Face mesh for yawn detection  |
+| OpenCV         | Video processing              |
+| MySQL          | Log detection events          |
+| Tkinter        | Popup notifications           |
+| PIL            | Meme caption rendering        |
+| Python         | The whole brain 🧠            |
+
+---
+
+## 🚀 Running the Project
+
+### ▶️ First Time Setup (Windows)
+
+```bash
+# Clone the repo
+git clone https://github.com/bindusri-c/yawn-phone-detector.git
+cd yawn-phone-detector
+
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment (Windows)
+venv\\Scripts\\activate
+
+# Install all dependencies
+pip install -r requirements.txt
+
+# OPTIONAL: Set up MySQL database
+# Create a database named: activity_logs
+# And inside it, create this table:
+# 
+# CREATE TABLE detections (
+#   id INT AUTO_INCREMENT PRIMARY KEY,
+#   timestamp DATETIME,
+#   phone_users INT,
+#   yawning_users INT,
+#   session_id VARCHAR(255)
+# );
+
+# Run the detector
+python detect_person.py
+----------------------------------------------------------------------------------------------------------------------------
+Second time :
+cd yawn-phone-detector
+venv\\Scripts\\activate
 python detect_person.py
